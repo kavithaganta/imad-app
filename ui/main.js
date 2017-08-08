@@ -9,6 +9,6 @@ var img = document.getElementById("madi");
     img.style.marginLeft = marginLeft + "px";
 }*/
 img.onClick =function(){
-   img.style.Left = " 0px ";
+   img.style.marginLeft = " 0px ";
    // var interval = setInterval(moveRight(),50);
 };
