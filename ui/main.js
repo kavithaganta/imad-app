@@ -10,6 +10,6 @@ var img = document.getElementById("madi");
 }*/
 img.onClick =function(){
     img.style.position = "absolute";
-   img.style.marginLeft= "0px ";
+   img.style.marginLeft= "50px ";
    // var interval = setInterval(moveRight(),50);
 };
