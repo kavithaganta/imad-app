@@ -9,6 +9,7 @@ var img = document.getElementById("madi");
     img.style.marginLeft = marginLeft + "px";
 }*/
 img.onClick =function(){
-   img.style.marginLeft = " 0px ";
+    img.style.position = "absolute";
+   img.style.marginLeft= "0px ";
    // var interval = setInterval(moveRight(),50);
 };
