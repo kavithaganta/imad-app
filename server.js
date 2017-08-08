@@ -20,7 +20,7 @@ var articleOne = {
                       This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                   </p>`
 };
-var htmlTemplate ={''
+var htmlTemplate ={
    <html>
 <head>
     <title>
