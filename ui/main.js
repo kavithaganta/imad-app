@@ -3,11 +3,11 @@ var element = document.getElementById("main-text");
 element.innerHTML = "Mokshagna";
 var img = document.getElementById("madi");
 var marginLeft = 0;
-function moveRight(){
+/*function moveRight(){
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + "px";
-}
+}*/
 img.onClick =function(){
-    //image.style.marginleft ="100px";
-    var interval = setInterval(moveRight(),50);
+   img.style.marginleft ="100px";
+   // var interval = setInterval(moveRight(),50);
 };
