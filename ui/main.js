@@ -8,6 +8,6 @@ var marginLeft = 0;
     img.style.marginLeft = marginLeft + "px";
 }*/
 img.onClick =function(){
-   img.style.marginleft ="100px";
+   img.style.marginLeft ="100px";
    // var interval = setInterval(moveRight(),50);
 };
