@@ -36,6 +36,6 @@ var button = document.getElementById("counter");
  //    var span = document .getElementById ("count");
     };
     //make the request
-request.open('GET','http://gantakavitha.imad.hasura-app.io\counter',true);
+request.open('GET','http://gantakavitha.imad.hasura-app.io/counter',true);
 request.send(null);
 };
