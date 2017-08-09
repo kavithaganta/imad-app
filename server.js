@@ -77,8 +77,8 @@ app.get('/counter', function (req, res){
 });
 var names=[];
 //gives name along with url
-app.get('/submit-name/:name',function(req,res){
-    var name =req.params.name;
+app.get('/submit-name',function(req,res){
+    var name =req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
 });
