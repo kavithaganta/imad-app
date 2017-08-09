@@ -18,7 +18,22 @@ var button = document.getElementById("counter");
  var counter = 0;
  button.onclick = function()
  {
-     counter = counter + 1;
-     var span = document .getElementById ("count");
-     span.innerHTML = counter.toString(); 
- }
+     var request = new XMLHTTPRequest();
+     request.onreadystatechange == function()
+     {
+          if(request.readyState=== XMLHTTPRequest.Done)
+          {
+              if(request.status===200)
+              {
+                var counter = request.responseText;
+                var span = document.getElementBtId("count");
+                span.innerHTML = counter.toString();
+          }
+     }
+//counter = counter + 1;
+ //    var span = document .getElementById ("count");
+    };
+    //make the request
+request.open('GET','http://gantakavitha.imad.hasura-app.io\counter',true);
+request.send(null);
+};
