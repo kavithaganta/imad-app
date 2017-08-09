@@ -14,9 +14,11 @@ img.onclick = function(){
     var interval = setInterval(moveRight(),50);
 } ;*/
 
-var button = document.getElementById("counter");
+//var button = document.getElementById("counter");
  //var counter = 0;
- button.onclick = function()
+ var submit =document.getElementById("submit-btn");
+ //button.onclick = function()
+ submit.onclick =function()
  {
      //create request
      var request = new XMLHttpRequest();
@@ -32,12 +34,12 @@ var button = document.getElementById("counter");
                names =JSON.parse(names);
                // var span = document.getElementById("count");
             //    span.innerHTML = counter.toString();
-            var list = '';
-    for(var i=0;i<names.length;i++){
-    list +='<li>'+ names[i]+'</li>';
-    }
-    var ul = document.getElementById("namelist");
-    ul.innerHTML = list;
+              var list = '';
+              for(var i=0;i<names.length;i++){
+              list +='<li>'+ names[i]+'</li>';
+              }
+             var ul = document.getElementById("namelist");
+                ul.innerHTML = list;
     
           }
      }
@@ -47,7 +49,7 @@ var button = document.getElementById("counter");
     //make the request
      var nameInput =document.getElementById("name");
      var name=nameInput.value;
-request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name' +name,true);
+request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name =' +name,true);
 request.send(null);
 };
 //submit name
