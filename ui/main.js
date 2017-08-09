@@ -43,10 +43,10 @@ img.onclick = function(){
     
           }
      }
-};     
+} ;    
 //counter = counter + 1;
  //    var span = document .getElementById ("count");
-    };
+
     //make the request
      var nameInput =document.getElementById("name");
      var name=nameInput.value;
