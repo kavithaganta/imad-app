@@ -76,11 +76,16 @@ app.get('/counter', function (req, res){
     res.send(counter.toString());
 });
 var names=[];
+//gives name along with url
 app.get('/submit-name/:name',function(req,res){
     var name =req.params.name;
    names.push(name);
    res.send(JSON.stringify(names));
 });
+//take the query string from url
+//app.get('/submit-name',function(req,res){
+ //   var name=req.query.name;
+//}
 
 app.get('/:articleName',function (req,res) {
     var articleName = req.params.articleName;
