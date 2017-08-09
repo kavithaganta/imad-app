@@ -23,7 +23,7 @@ var button = document.getElementById("counter");
      //capture the response
      request.onreadystatechange = function()
      {
-          if(request.readyState=== XMLHTTPRequest.Done)
+          if(request.readyState=== XMLHTTPRequest.DONE)
           {
               if(request.status===200)
               {
