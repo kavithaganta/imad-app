@@ -33,25 +33,23 @@ img.onclick = function(){
                var names=request.responseText;
                names =JSON.parse(names);
                // var span = document.getElementById("count");
-            //    span.innerHTML = counter.toString();
-              var list = '';
-              for(var i=0;i<names.length;i++){
-              list +='<li>'+ names[i]+'</li>';
-              }
+             //   span.innerHTML = counter.toString();
+               var list = '';
+                    for(var i=0;i<names.length;i++){
+                    list +='<li>'+ names[i]+'</li>';
+                     }
              var ul = document.getElementById("namelist");
                 ul.innerHTML = list;
-    
+              }
           }
-     }
-} ;    
+   };    
 //counter = counter + 1;
  //    var span = document .getElementById ("count");
-
-    //make the request
+      //make the request
      var nameInput =document.getElementById("name");
      var name=nameInput.value;
-request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name =' +name,true);
-request.send(null);
+   request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name =' +name,true);
+   request.send(null);
 };
 //submit name
 /*var nameInput = document.getElementById("name");
