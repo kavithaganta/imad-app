@@ -18,7 +18,9 @@ var button = document.getElementById("counter");
  //var counter = 0;
  button.onclick = function()
  {
+     //create request
      var request = new XMLHTTPRequest();
+     //capture the response
      request.onreadystatechange = function()
      {
           if(request.readyState=== XMLHTTPRequest.Done)
