@@ -1,4 +1,4 @@
-`console.log('Loaded!');
+/*console.log('Loaded!');
 var element = document.getElementById("main-text");
 //element.innerHTML = "Mokshagna";
 var img = document.getElementById("madi");
@@ -12,7 +12,7 @@ img.onclick = function(){
     
    //img.style.marginLeft= "500px ";
     var interval = setInterval(moveRight(),50);
-} ;`
+} ;*/
 
 var button = document.getElementById("counter");
  //var counter = 0;
