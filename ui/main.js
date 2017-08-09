@@ -1,6 +1,6 @@
 /*console.log('Loaded!');
 var element = document.getElementById("main-text");
-//element.innerHTML = "Mokshagna";
+element.innerHTML = "Mokshagna";
 var img = document.getElementById("madi");
 
 var marginLeft = 0;
@@ -10,7 +10,7 @@ function moveRight(){
 };
 img.onclick = function(){
     
-   //img.style.marginLeft= "500px ";
+img.style.marginLeft= "500px ";
     var interval = setInterval(moveRight(),50);
 } ;*/
 
