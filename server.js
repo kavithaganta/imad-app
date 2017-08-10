@@ -33,7 +33,7 @@ var articles = {
                         date: '8,aug,2017',
                         content  :`<p>    This is the content for my third article.</p>`
                         }
-};*/
+};
 function createTemplate(data){
 var  title = data.title;
 var heading = data.heading;
@@ -67,7 +67,7 @@ var htmlTemplate =`
 </html>
 `;
 return htmlTemplate;
-}
+}*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
