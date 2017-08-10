@@ -20,7 +20,7 @@ var articles = {
                         <p>
                         This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                         </p>`
-                },
+                        },
                   'article-two': {
                         title:'article-two:I am kavitha',
                         heading  :'Article-two',
