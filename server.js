@@ -79,7 +79,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var pool =new pool(config);
-app.get('test-db',function(req,res){
+app.get('/test-db',function(req,res){
     pool.query('select *from test',function(req,res){
         if(err){
             res.error.status(500).send(err.toString());
