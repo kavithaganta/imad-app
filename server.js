@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var config = {
     user : 'gantakavitha',
     database : 'gantakavitha',
-    host : 'db-imd-hasura-app.io',
+    host : 'db.imd.hasura-app.io',
     port :'5432',
     password : process.env.DB_PASSWORD
 };
