@@ -2,8 +2,6 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var pool =require('pg').pool;
-var app = express();
-app.use(morgan('combined'));
 var config = {
     user : 'gantakavitha',
     database : 'gantakavitha',
@@ -11,6 +9,9 @@ var config = {
     port :'5432',
     password : process.env.DB_PASSWORD
 };
+
+var app = express();
+app.use(morgan('combined'));
 
 var articles = {
                   'article-one':  {
