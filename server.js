@@ -1,10 +1,17 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var pool =require('pg').pool;
 var app = express();
 app.use(morgan('combined'));
-/*
+var config = {
+    user : 'gantakavitha',
+    database : 'gantakavitha',
+    host : 'db-imd-hsura-app.io',
+    port :'5432',
+    password : process.env.DB_PASSWORD
+};
+
 var articles = {
                   'article-one':  {
                         title:'article-one:I am kavitha',
@@ -67,9 +74,19 @@ var htmlTemplate =`
 </html>
 `;
 return htmlTemplate;
-}*/
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+var pool =new pool(config);
+app.get('test-db',function(req,res){
+    pool.query("select * from test ",function(req,res){
+        if(err){
+            res.error.status(500).send(err.toString());
+        } else {
+            res.send(JSON.stringify(result.rows));
+        }    
+    });
 });
 var counter = 0;
 app.get('/counter', function (req, res){
