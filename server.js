@@ -81,7 +81,7 @@ app.get('/', function (req, res) {
 });
 var pool =new pool(config);
 app.get('/test1-db',function(req,res){
-    pool.query('SELECT *FROM test1',function(req,res){
+    pool.query('SELECT *FROM test1',function(err,result){
         if(err){
             res.error.status(500).send(err.toString());
         } else {
