@@ -46,10 +46,10 @@ img.style.marginLeft= "500px ";
 //counter = counter + 1;
  //    var span = document .getElementById ("count");
       //make the request
-     var nameInput =document.getElementById("name");
+    /* var nameInput =document.getElementById("name");
      var name = nameInput.value;
    request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name =' + name,true);
-   request.send(name);
+   request.send(name);*/
 };
 //submit name
 /*var nameInput = document.getElementById("name");
@@ -65,3 +65,5 @@ submit.onclick = function(){
     ul.innerHTML = list;
     
 };*/
+   request.open('GET','http://gantakavitha.imad.hasura-app.io/index1.html',true);
+   request.send(null);
