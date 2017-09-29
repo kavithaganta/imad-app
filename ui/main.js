@@ -49,7 +49,7 @@ img.style.marginLeft= "500px ";
      var nameInput =document.getElementById("name");
      var name = nameInput.value;
    request.open('GET','http://gantakavitha.imad.hasura-app.io/submit-name?name =' + name,true);
-   request.send(null);
+   request.send(name);
 };
 //submit name
 /*var nameInput = document.getElementById("name");
